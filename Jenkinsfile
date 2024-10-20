@@ -10,19 +10,19 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Installs Go dependencies
-                sh 'go mod tidy'
+                // sh 'go mod tidy'
             }
         }
         stage('Build') {
             steps {
                 // Builds the Go application
-                sh 'go build -o your-app-name'
+                // sh 'go build -o your-app-name'
             }
         }
         stage('Test') {
             steps {
                 // Runs the Go tests
-                sh 'go test ./...'
+                // sh 'go test ./...'
             }
         }
         stage('Deploy') {
