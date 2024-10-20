@@ -11,18 +11,21 @@ pipeline {
             steps {
                 // Installs Go dependencies
                 // sh 'go mod tidy'
+                echo 'Deploying to production...'
             }
         }
         stage('Build') {
             steps {
                 // Builds the Go application
                 // sh 'go build -o your-app-name'
+                echo 'Deploying to production...'
             }
         }
         stage('Test') {
             steps {
                 // Runs the Go tests
                 // sh 'go test ./...'
+                echo 'Deploying to production...'
             }
         }
         stage('Deploy') {
