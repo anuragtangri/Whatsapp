@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Clones the repository from GitHub
-                git 'https://github.com/anuragtangri/whatsapp.git'
+                // Clones the repository from GitHub and uses the main branch
+                git branch: 'main', url: 'https://github.com/anuragtangri/whatsapp.git'
             }
         }
         stage('Install Dependencies') {
